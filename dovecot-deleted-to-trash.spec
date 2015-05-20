@@ -5,18 +5,20 @@ Name:           dovecot-deleted-to-trash
 Version:        0.6
 Release:        2%{?dist}
 Summary:        Dovecot plugin: copy deleted item to Trash folder
-
-Group: Networking/Daemons
 Source: %{name}-%{version}.tar.gz
-
 License: GPL
 
-BuildRequires: dovecot-devel, postgresql-devel
+BuildRequires: dovecot-devel
 Requires: dovecot >= 2.0.15
 
-
-%description
-The purpose of this deleted_to_trash-plugin is that IMAP client,such as outlook doesn't work well with dovecot, it can not copy deleted email to Trash folder automatically. So, this plugin is to copy deleted item to Trash folder. Also, need to tell the difference between "move" and "delete" action on Outlook side, since both action deleted_to_trash marks the original email as deleted. for a "move" case, we don't copy to the trash folder.
+%description 
+The purpose of this deleted_to_trash-plugin is that IMAP client,such
+as outlook doesn't work well with dovecot, it can not copy deleted
+email to Trash folder automatically. So, this plugin is to copy
+deleted item to Trash folder. Also, need to tell the difference
+between "move" and "delete" action on Outlook side, since both action
+deleted_to_trash marks the original email as deleted. for a "move"
+case, we don't copy to the trash folder.
 
 %prep
 %setup -q
