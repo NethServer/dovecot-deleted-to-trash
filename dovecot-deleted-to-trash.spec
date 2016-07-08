@@ -3,7 +3,7 @@
 
 Name:           dovecot-deleted-to-trash
 Version:        0.6
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Dovecot plugin: copy deleted item to Trash folder
 Source: %{name}-%{version}.tar.gz
 License: GPL
@@ -35,10 +35,13 @@ mv %{buildroot}/%{_libdir}/dovecot/lib_deleted_to_trash_plugin.so %{buildroot}/%
 %doc 95-deleted_to_trash_plugin.conf
 
 %changelog
+* Fri Jul 08 2016 Davide Principi <davide.principi@nethesis.it> - 0.6-3
+- Rebuild for ns7
+
 * Mon Mar 30 2015 Davide Principi <davide.principi@nethesis.it> - 0.6-2
 - Load deleted_to_trash before antispam plugin. Bug #3095 [NethServer]
 
-* Tue Jan 27 2014 Edoardo Spadoni <edoardo.spadoni@nethesis.it> - 0.6
+* Tue Jan 27 2015 Edoardo Spadoni <edoardo.spadoni@nethesis.it> - 0.6
 - Update to version 0.6
 
 * Wed Aug 01 2012 Giacomo Sanchietti <giacomo.sanchietti@nethesis.it> - 0.1-1
