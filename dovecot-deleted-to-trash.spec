@@ -9,7 +9,7 @@ Source: %{name}-%{version}.tar.gz
 License: GPL
 
 BuildRequires: dovecot-devel
-Requires: dovecot >= 2.0.15
+Requires: dovecot >= 2.2.10
 
 %description 
 The purpose of this deleted_to_trash-plugin is that IMAP client,such
